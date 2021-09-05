@@ -1,3 +1,4 @@
-FROM nginx:latest
-COPY */*.jar /usr/share/nginx/html/
-EXPOSE 80
+FROM tomcat:8.0
+COPY */*.jar /usr/local/tomcat/webapps/
+EXPOSE 8080
+CMD ["catalina.sh" , "run"]
