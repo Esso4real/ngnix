@@ -1,3 +1,3 @@
 FROM nginx:latest
-COPY */target/*.jar /usr/share/nginx/html/
+COPY */*.jar /usr/share/nginx/html/
 EXPOSE 80
